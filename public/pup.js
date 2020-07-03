@@ -101,30 +101,33 @@ async function init() {
     const cookies = JSON.parse(cookiesString);
 
 
-    await page.setCookie(...cookies);
-
-    page.setViewport({width: 1366, height: 768});
-
-
-    const isAuth = await checkAuth(page);
-
-    if (!isAuth) {
-        await makeAuth(page);
-    }
-    const argv = require('minimist')(process.argv.slice(2));
+    console.log(cookies)
+    //await page.setCookie(...cookies);
 
 
-    if (argv.mode && argv.mode === 'model') {
-        await getModels(page)
-    }
 
-    if (argv.mode && argv.mode === 'maker') {
-        await getMakers(page)
-    }
-
-    if (argv.mode && argv.mode === 'result') {
-        await getResult(page)
-    }
+    // page.setViewport({width: 1366, height: 768});
+    //
+    //
+    // const isAuth = await checkAuth(page);
+    //
+    // if (!isAuth) {
+    //     await makeAuth(page);
+    // }
+    // const argv = require('minimist')(process.argv.slice(2));
+    //
+    //
+    // if (argv.mode && argv.mode === 'model') {
+    //     await getModels(page)
+    // }
+    //
+    // if (argv.mode && argv.mode === 'maker') {
+    //     await getMakers(page)
+    // }
+    //
+    // if (argv.mode && argv.mode === 'result') {
+    //     await getResult(page)
+    // }
 
 }
 

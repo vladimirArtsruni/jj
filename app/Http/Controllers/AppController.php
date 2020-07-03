@@ -8,51 +8,49 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use JsonMachine\JsonMachine;
 use App\Helpers\Helper;
+use Nesk\Puphpeteer\Puppeteer;
+use App\PuppeteerService;
 
 class AppController extends Controller
 {
+    protected $puppeteer;
+
+    public function __construct()
+    {
+        $this->puppeteer = new PuppeteerService();
+    }
 
     public function getMakes(Request $request)
     {
+
         $query = '';
 
         foreach ($request->get('type') as $value) {
             $query .= '&vehicleType=' . $value;
         }
 
-        $checkPath = md5(substr($query, 1)) . '.json';
+        $json  = $this->puppeteer->getMakes($query);
 
 
-        $makerJson = File::exists(public_path($checkPath));
 
-        if ($makerJson) {
-            return response()->json(Helper::parse($checkPath));
-        }
-
-        shell_exec("node pup.js --query=\"$query\" --mode=maker &");
-
-        return response()->json(Helper::parse($checkPath));
+        return response()->json(json_decode($json));
 
 
     }
 
     public function getModels(Request $request)
     {
+
+
         $query = 'inventory=';
 
         foreach ($request->get('models') as $value) {
             $query .= '&make=' . $value;
         }
 
-        $checkPath = md5($query) . '.json';
-        $modelJson = File::exists(public_path($checkPath));
+        $json  = $this->puppeteer->getModels($query);
 
-        if ($modelJson) {
-            return response()->json(Helper::parse($checkPath));
-        }
-
-        shell_exec("node pup.js --query=\"$query\" --mode=model   &");
-        return response()->json(Helper::parse($checkPath));
+        return response()->json(json_decode($json));
 
 
     }
@@ -64,13 +62,14 @@ class AppController extends Controller
         $query = http_build_query($request->all());
         $query = preg_replace('/%5B[0-9]+%5D/simU', '', $query);
 
-        shell_exec("node pup.js --query=\"$query\" --mode=result   &");
+        $html  = $this->puppeteer->getResult($query);
+
+
 
 
 
         include base_path()."/resources/vendor/phpQuery/phpQuery/phpQuery.php";
 
-        $html = File::get(public_path(md5($query).'.html'));
         \phpQuery::newDocumentHTML($html);
         $result=pq('.next')->prev();
         $numPage=pq($result)->eq(0)->html();
