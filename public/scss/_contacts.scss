@@ -1,0 +1,153 @@
+.contacts__main.road-bg {
+    background-position: center 130%;
+}
+
+.contacts__content p{
+    a {
+        color: $orange;
+    }
+}
+
+.contacts__top {
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.contacts__top-row {
+    display: flex;
+    justify-content: baseline;
+}
+
+.contacts__top-column {
+    &:first-child {
+        margin-right: 50px;
+    }
+
+    &-adress,
+    &-phones,
+    &-fax,
+    &-email {
+        margin-bottom: 34px;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.contacts__bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__bottom-column {
+    width: 100%;
+    max-width: 345px;
+
+    &-title {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        padding-right: 10px;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-social {
+        margin-top: 24px;
+        max-width: 178px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        a {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 8px;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            img {
+                max-width: 35px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.contacts__tabs-block {
+    margin-top: 40px;
+
+    .tabs-content {
+        background: none;
+    }
+}
+
+.contacts__tabs-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__tab {
+    border: 2px solid $light_gray;
+    color: $light_gray;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    font-size: 14px;
+    line-height: 16px;
+    padding: 13px 34px 11px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    transition: .2s all;
+
+    &.active {
+        color: $orange;
+        border-color: $orange;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover{
+        border-color: $orange;
+        color: $orange;
+    }
+}
+
+.contacts__tabs-content-box {
+    max-width: 345px;
+    padding-top: 31px;
+
+    span {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+}
+
+.page-bottom__contacts-form {
+    background: $contacts_bg-form;
+    padding: 50px 0;
+
+    .about__title {
+        color: #fff;
+    }
+
+    .page-bottom-subtitle {
+        max-width: 770px;
+        margin: 0 auto;
+        color: #fff;
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.reviews-page__item {
+    padding: 20px 20px 35px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &-box {
+        text-align-last: center;
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+        color: #000;
+        font-size: 22px;
+        line-height: 26px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 30px;
+            background: $orange;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-author {
+        font-size: 19px;
+        margin-bottom: 20px;
+        line-height: 23px;
+        color: $orange;
+    }
+
+    &-carousel {
+        margin-bottom: 39px;
+
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            top: unset;
+            left: 50%;
+            transform: translateX(-50%);
+
+            li button {
+                width: 20px;
+                height: 4px;
+
+                &:before {
+                    background: #fff;
+                    border-radius: 0;
+                    width: 20px;
+                    height: 4px;
+                }
+            }
+            li.slick-active button:before{
+                background: $orange;
+            }
+        }
+        .slider__arrows{
+            width: 40px;
+            height: 40px;
+            &-right{
+                right: 30px;
+            }
+            &-left{
+                left: 30px;
+            }
+        }
+    }
+
+}

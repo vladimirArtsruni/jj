@@ -1,0 +1,139 @@
+[
+  {"label": "AM General", "value": "101000003"},
+  {"label": "Buick", "value": "101000009"}
+
+,
+  {"label": "Cadillac", "value": "101000010"}
+
+,
+  {"label": "Chevrolet", "value": "101000011"}
+
+,
+  {"label": "Chrysler", "value": "101000012"}
+
+,
+  {"label": "Cushman", "value": "101000586"}
+
+,
+  {"label": "Daihatsu", "value": "101000015"}
+
+,
+  {"label": "Dodge", "value": "101000016"}
+
+,
+  {"label": "EcoCentre", "value": "101004697"}
+
+,
+  {"label": "Eldorado", "value": "101000546"}
+
+,
+  {"label": "Establishment", "value": "101001233"}
+
+,
+  {"label": "Ford", "value": "101000019"}
+
+,
+  {"label": "Freightliner", "value": "101000020"}
+
+,
+  {"label": "Gaz", "value": "101004671"}
+
+,
+  {"label": "Gem", "value": "101000347"}
+
+,
+  {"label": "GMC", "value": "101000023"}
+
+,
+  {"label": "Honda", "value": "101000025"}
+
+,
+  {"label": "Hyundai", "value": "101000027"}
+
+,
+  {"label": "International", "value": "101000029"}
+
+,
+  {"label": "Isuzu", "value": "101000030"}
+
+,
+  {"label": "Kia", "value": "101000034"}
+
+,
+  {"label": "Mazda", "value": "101000042"}
+
+,
+  {"label": "Mercedes-Benz", "value": "101000043"}
+
+,
+  {"label": "Mercury", "value": "101000044"}
+
+,
+  {"label": "MINI", "value": "101000045"}
+
+,
+  {"label": "Mitsubishi", "value": "101000046"}
+
+,
+  {"label": "MSV", "value": "101004657"}
+
+,
+  {"label": "Nissan", "value": "101000049"}
+
+,
+  {"label": "Oldsmobile", "value": "101000050"}
+
+,
+  {"label": "Other", "value": "101000424"}
+
+,
+  {"label": "Plymouth", "value": "101000052"}
+
+,
+  {"label": "Pontiac", "value": "101000053"}
+
+,
+  {"label": "Ram", "value": "101004058"}
+
+,
+  {"label": "RTS", "value": "101004246"}
+
+,
+  {"label": "Saab", "value": "101000056"}
+
+,
+  {"label": "Saturn", "value": "101000058"}
+
+,
+  {"label": "Subaru", "value": "101000063"}
+
+,
+  {"label": "Suzuki", "value": "101000064"}
+
+,
+  {"label": "Terra Transport", "value": "101000657"}
+
+,
+  {"label": "Thomas", "value": "101001099"}
+
+,
+  {"label": "Toyota", "value": "101000065"}
+
+,
+  {"label": "Vantage", "value": "101000990"}
+
+,
+  {"label": "Volkswagen", "value": "101000066"}
+
+,
+  {"label": "VPG", "value": "101004098"}
+
+,
+  {"label": "Willys", "value": "101004207"}
+
+,
+  {"label": "Winnebago", "value": "101000319"}
+
+,
+  {"label": "Workhorse", "value": "101000495"}
+]

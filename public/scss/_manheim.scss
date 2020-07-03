@@ -1,0 +1,173 @@
+.manheim-search-result {
+    &.road-bg {
+        background-position: center 130%;
+    }
+
+    .search-item {
+        border: 1px solid #ccc;
+    }
+
+    tr {
+        td {
+            padding: 10px 8px;
+
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .jq-selectbox__select-text {
+        min-width: 200px;
+    }
+
+    .jq-selectbox+label {
+        margin-left: 10px;
+        font-weight: 700;
+    }
+
+    nav {
+        margin-bottom: 20px;
+
+        .row {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+
+        &:last-child {
+            .row {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.sortBar {
+    span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+
+#goToPageNum1 {
+    border: 1px solid #ccc;
+    padding: 4px 4px;
+}
+
+#goToPageBtn1 {
+    padding: 4px 10px;
+}
+
+.mui-pagination {
+    padding-right: 13px;
+
+    span {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .next {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '>';
+            left: 0;
+            top: 50%;
+            font-size: 22px;
+            line-height: 27px;
+            color: $orange;
+            font-weight: 700;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.icon-cr {
+    background: $green;
+    color: #fff;
+    padding: 2px 6px;
+}
+
+.nr {
+    color: $orange;
+}
+
+.manheim-product {
+    table tr {
+        td {
+            text-align: left;
+            padding: 8px;
+
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+    table.tm2 tr td{
+        text-transform: uppercase;
+    }
+
+    .search-item-table {
+        table tr {
+            td {
+                &:first-child {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.product-page__information-text {
+    span {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.manheimAddInfo {
+    display: block;
+    height: auto;
+    overflow: hidden;
+}
+
+span.prod-price {
+    font-weight: 700;
+}
+
+.manheim-product__subtitle {
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: center;
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.manheim-product {
+    .product-page__table-bottom-panel {
+        margin-bottom: 20px;
+    }
+
+    .product-page__information {
+        padding-bottom: 0;
+    }
+
+    .product-page__table-top-panel {
+        margin-bottom: 0;
+    }
+
+    .product-page__information .show-more {
+        margin-top: 20px;
+    }
+}

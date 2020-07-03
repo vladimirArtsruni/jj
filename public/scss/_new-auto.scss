@@ -1,0 +1,41 @@
+.new-auto__main {
+    .tabs-content {
+        background: none;
+    }
+}
+.new-auto__subtitle {
+    max-width: 784px;
+    margin: 0 auto 52px auto;
+    @extend %font-subtitle;
+    text-align: center;
+}
+
+.new-auto__main .bg_gray {
+
+    .tabs-content-box {
+        padding-top: 7px;
+    }
+}
+
+.new-auto__search-button {
+    text-align: center;
+    margin-top: 25px;
+
+    a {
+        @extend %button-carousel_big
+    }
+}
+
+.new-auto__search-button a {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 16px;
+}
+.new-auto__text-preview p{
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+section.content .bu-no-padding{
+    padding-top: 0;
+}

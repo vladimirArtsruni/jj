@@ -1,0 +1,137 @@
+.news__sort {
+    display: flex;
+    max-width: 750px;
+    align-items: center;
+
+    .jq-selectbox__select {
+        color: $placeholder-color;
+        padding: 11px 0 10px 10px;
+        border: 1px solid $placeholder-color;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+        min-width: 230px;
+    }
+
+    &-date,
+    &-category {
+        margin-right: 30px;
+    }
+
+    .jq-selectbox__dropdown {
+        background: #fff;
+        border: 1px solid $placeholder-color;
+    }
+
+    .jq-selectbox li {
+        font-size: 16px;
+    }
+}
+
+.news__item-img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        max-height: 396px;
+        width: 100%;
+    }
+
+    &:before {
+        @extend %hover-before;
+    }
+
+    &:hover {
+        &:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        img {
+            transform: scale(1.05);
+            opacity: .8;
+            max-width: 100%;
+        }
+    }
+}
+
+.news__sort-viewed {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.news__items {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news__item {
+    max-width: 541px;
+    width: 100%;
+    margin-bottom: 51px;
+
+    &:nth-child(2n) {
+        margin-left: 59px;
+    }
+}
+
+.news__item-date {
+    padding-top: 18px;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.news__item-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $footer_bg;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    position: relative;
+
+    &::after {
+        @extend %after_orange;
+    }
+}
+
+.news__item-button {
+    padding-top: 41px;
+
+    .show-more {
+        margin-top: 0;
+        text-align: left;
+
+        a {
+            height: unset;
+            padding: 10px 35px 9px;
+        }
+    }
+}
+
+.news__page-number {
+    text-align: center;
+    color: $placeholder-color;
+
+    span {
+        &:last-child {
+            position: relative;
+            padding-right: 26px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                top: 50%;
+                right: 0;
+                background: url(../images/icons/arrow-down-dark.png) no-repeat;
+                transform: translateY(-50%) rotate(-90deg);
+                background-size: auto;
+            }
+        }
+    }
+}

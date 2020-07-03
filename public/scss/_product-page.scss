@@ -1,0 +1,199 @@
+.prod-image {
+    position: relative;
+}
+
+.product-page__gallery-box {
+    display: flex;
+}
+
+.product-page__gallery-left {
+    max-width: 689px;
+    margin-right: 30px;
+}
+
+.prod-image .show-all-photos {
+    position: absolute;
+    right: 35px;
+    bottom: 24px;
+    z-index: 15;
+    border-bottom: 1px solid $orange;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    &:hover{
+        color: $orange;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.product-page__table-bottom-panel {
+    a {
+        @extend %button-carousel_big;
+        max-width: 161px;
+
+        &:first-child {
+            background: $green;
+            margin-right: 30px;
+
+            &:hover {
+                background: $orange;
+            }
+        }
+
+        &:last-child {
+            padding: 13px 23px 11px;
+        }
+    }
+}
+
+#table-product {
+    margin-bottom: 30px;
+    min-width: 421px;
+    width: 100%;
+
+    td {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 9px 10px 8px;
+        color: $body_color;
+    }
+}
+
+.product-page__table-top-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.product-page__table-bottom-panel {
+    text-align: center;
+}
+
+.table-top-panel__column {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        img {
+            transform: translateY(-7px);
+        }
+    }
+}
+
+.product-page__content {
+    .about__subtitle {
+        @extend %font-subtitle;
+        margin-bottom: 58px;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.product-page__information {
+    .show-more {
+        text-align: left;
+        margin-top: 50px;
+    }
+}
+
+.product-page__sklad {
+    background: url(../images/data/road.jpg);
+    background-position: center 140%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    ul.type-content {
+        li {
+            text-indent: 10px;
+            padding-left: 0;
+            margin-bottom: 20px;
+
+            &::before {
+                top: 10px
+            }
+        }
+    }
+
+    .about__title {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.reviews__carousel {
+
+    .slider__arrows {
+        top: 15%;
+    }
+
+    .slider__arrows-right {
+        right: 0;
+    }
+
+    .show-more {
+        margin-top: 20px;
+    }
+
+    &-content {
+        max-width: 874px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        &-text {
+            @extend %font-subtitle;
+            font-style: italic;
+            position: relative;
+            padding: 50px 0 45px;
+        }
+
+        &-author {
+            color: $placeholder-color;
+            margin-bottom: 22px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+.reviews__carousel-content-text {
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0;
+        width: 55px;
+        height: 55px;
+        background: url(../images/icons/quotes-up.png) no-repeat center / auto;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        right: 0;
+        width: 55px;
+        height: 55px;
+        background: url(../images/icons/quotes-down.png) no-repeat center / auto;
+    }
+}

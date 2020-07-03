@@ -1,0 +1,536 @@
+.page-bottom-form-box {
+    margin-top: 50px;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1030px;
+        margin: 0 auto;
+
+        input {
+            @extend %input-form;
+
+            &::placeholder {
+                color: $placeholder-color;
+            }
+        }
+
+        button {
+            @extend %button-form;
+
+            span {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.footer__search,
+.header__mobile-box .header__search {
+    text-align: right;
+
+    form {
+        input {
+            min-width: 167px;
+            width: 100%;
+            margin-bottom: 17px;
+            height: 33px;
+            padding: 9px 30px 8px 9px;
+            border: 1px solid #fff;
+            background: url(../images/icons/footer-search-icon.png) no-repeat;
+            background-position: 94% 50%;
+            background-size: inherit;
+            position: relative;
+            color: #fff;
+
+            &::placeholder {
+                color: #fff;
+
+            }
+        }
+    }
+}
+
+.contacts-form__box {
+    padding-top: 50px;
+
+    form {
+        display: flex;
+        max-width: 770px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input {
+        @extend %input-form;
+        margin-bottom: 10px;
+        height: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    textarea {
+        min-width: 510px;
+        min-height: 140px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        padding: 12px 10px;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: $placeholder-color;
+        }
+    }
+
+    button {
+        @extend %button-form;
+    }
+
+    .contacts-form__box-left {
+        margin-right: 10px;
+    }
+
+    .contacts-form__box-right {
+        display: flex;
+        flex-wrap: wrap;
+
+        input,
+        button {
+            max-width: 250px;
+            height: 40px;
+        }
+    }
+}
+
+.news__sort {
+    select {
+        max-width: 230px;
+        width: 100%;
+        color: $placeholder-color;
+        padding: 11px 0 10px 10px;
+        border: 1px solid $placeholder-color;
+        font-size: 16px;
+        line-height: 19px;
+        -webkit-appearance: none;
+        position: relative;
+        background: url(../images/icons/arrow-down-dark.png) no-repeat;
+        background-position: 95% center;
+        background-size: auto;
+        outline: none;
+
+        option {
+            outline: none;
+            padding: 11px 0 10px 10px;
+            border-color: $placeholder-color;
+        }
+    }
+}
+
+.search-popup .search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    border: none;
+    background: none;
+}
+
+.search-popup input[type=text] {
+    padding: 14px 9px 14px;
+    color: #fff;
+    width: 229px;
+    border: none;
+    background: rgba(#000,.65);
+    font-size: 14px;
+
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+body input,
+body textarea {
+    font-size: 14px;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+//popup
+#popup-landing {
+    max-width: 698px;
+    min-height: 522px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 38px 70px 70px;
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input {
+
+            font-size: 14px;
+            line-height: 27px;
+            padding: 30px 0 0px 5px;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+            color: #fff;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            width: 259px;
+            margin-bottom: 10px;
+
+            &:nth-child(3),
+            &:first-child {
+                margin-right: 40px;
+            }
+
+            &::placeholder {
+                color: rgba(#fff, .4);
+
+            }
+        }
+
+        button {
+            border: 2px solid $orange;
+            text-align: center;
+            padding: 10px 26px 10px;
+            color: $orange;
+            text-transform: uppercase;
+
+            font-size: 14px;
+            display: inline-block;
+            line-height: 16px;
+            cursor: pointer;
+            min-width: 220px;
+            color: #fff;
+            background: none;
+            margin-top: 42px;
+
+            &:hover {
+                background: rgba($orange, .4)
+            }
+        }
+    }
+}
+
+// dealer-zayavka
+.form-one {
+    padding-bottom: 40px;
+
+    p {
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-small {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+    }
+
+    &__column {
+        width: 33%;
+        min-width: 303px;
+
+        input {
+            padding: 6px 7px;
+            margin-top: 5px;
+            min-width: 280px;
+        }
+
+        img {
+            position: relative;
+            top: 5px;
+        }
+
+        &-small {
+            width: 50%;
+
+            &:first-child {
+                margin-right: 30px;
+            }
+
+            input {
+                min-width: auto;
+            }
+        }
+    }
+
+    &__box {
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 12px;
+        }
+
+        label {
+            display: block;
+
+            &.req:after {
+                content: '*';
+                color: $orange;
+                position: relative;
+                left: 4px;
+            }
+        }
+    }
+
+    .form-submit {
+        text-align: center;
+
+        input {
+            @extend %button-carousel_big;
+            border: none;
+            transition: all .2s;
+            cursor: pointer;
+        }
+    }
+}
+
+.dealer__zayavka {
+    .form-one {
+        &__column {
+            padding-right: 15px;
+            padding-left: 15px;
+
+            input {
+                width: 100%;
+                border: 1px solid $manheim-border;
+                padding: 12px 7px 10px;
+                min-width: auto;
+
+                &:focus {
+                    border-color: $orange;
+                    outline: 0;
+                    box-shadow: 0 0 8px rgba($orange, 0.6);
+                }
+            }
+        }
+    }
+}
+
+//manheim
+.manheim {
+    input+p {
+        color: inherit;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        min-height: 130px;
+        width: 100%;
+        border-color: $manheim-border;
+        margin-top: 5px;
+        padding: 6px 10px;
+        outline: none;
+    }
+
+    .l-2 {
+        font-weight: 300;
+    }
+
+    .jq-selectbox.jqselect.input {
+        min-width: auto;
+        z-index: 4!important;
+    }
+
+    .jq-selectbox.focused .jq-selectbox__select-text,
+    input:focus,
+    textarea:focus {
+        border-color: $orange;
+        outline: 0;
+        box-shadow: 0 0 8px rgba($orange, 0.6);
+    }
+
+    .form-one__box {
+        margin-bottom: 20px;
+    }
+
+    .form-one__column {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .text-right {
+            text-align: right;
+        }
+    }
+
+    .form-one__column-small {
+        width: auto;
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+        .text-center {
+            position: relative;
+            top: 25%;
+        }
+
+        .jq-selectbox__select-text {
+            min-width: 138px;
+        }
+    }
+
+    .jq-selectbox__dropdown {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 15px 0;
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            font-weight: 300;
+            margin-bottom: 0px;
+            padding: 8px 15px;
+            font-size: 15px;
+            white-space: initial;
+        }
+    }
+
+    .form-one__row-buttons {
+        .btn-solid {
+            @extend %button-carousel_big;
+            border: none;
+            transition: .2s all;
+            min-width: 220px;
+        }
+    }
+
+    .page-res .jq-selectbox__select-text {
+        min-width: 100px;
+    }
+}
+
+.manheim .jq-selectbox__select-text,
+.form-one__column input {
+    padding: 10px 33px 10px 15px;
+    display: block;
+    width: 100%;
+    border: 1px solid $manheim-border;
+    background: #fff;
+    min-width: 349px;
+    font-weight: 300;
+    white-space: inherit;
+}
+
+
+//modal login,reg,forget
+
+#login,
+#reg,
+#forget {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    width: 100%;
+    background: #000;
+
+    .form-group {
+        text-align: center;
+    }
+
+    input {
+        max-width: 400px;
+        width: 100%;
+        padding: 12px 10px;
+        border: none;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .about__title {
+        color: #fff;
+    }
+
+    .row.text-center {
+        margin-top: 20px;
+
+        input {
+            max-width: 140px;
+            background: $green;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: .2s all;
+            cursor: pointer;
+
+            &:hover {
+                background: $orange;
+            }
+        }
+
+        a {
+            color: $orange;
+            margin-left: 13px;
+            border-bottom: 1px dashed $orange;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+#login .fg-flex .row,
+#reg .fg-flex .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    input {
+        margin: 0;
+        background: #fff;
+        margin-right: 15px;
+        border: 1px solid $orange;
+    }
+
+    .check label {
+        display: flex;
+        white-space: nowrap;
+        color: $gray-2;
+    }
+
+    a.dashed {
+        color: $gray-2;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .jq-checkbox {
+        margin: 3px 7px 0 0;
+    }
+
+    .jq-checkbox.checked .jq-checkbox__div {
+        position: relative;
+        left: 7px;
+    }
+}

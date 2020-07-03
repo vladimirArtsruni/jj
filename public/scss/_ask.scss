@@ -1,0 +1,76 @@
+.ask {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 360px;
+        width: 100%;
+        background: $bg_gray;
+        margin-right: 50px;
+    }
+
+    &__tabs {
+        padding: 30px;
+
+        &-item {
+            margin-bottom: 20px;
+            text-indent: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: .2s all;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: $orange;
+                border-radius: 50%;
+                top: 8px;
+                left: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.active,
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    &__right {
+        padding-top: 30px;
+
+        &-content {
+            display: none;
+
+            &.active-tab {
+                display: block;
+            }
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &-content-title {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+section.content .ask__bottom {
+    text-align: center;
+    padding-top: 0;
+
+    .show-more {
+        margin-top: 50px;
+    }
+}

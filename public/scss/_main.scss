@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $body_font-family;
+    font-size: $body_font;
+    color: $body_color;
+    line-height: $body_font-line-height;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.header {
+    z-index: 110;
+    position: relative;
+
+    a {
+        color: #fff;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1147px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container__inner {
+    max-width: 1073px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    color: $body_color;
+    background: #fff;
+    overflow-x: hidden;
+    flex: 1 0 auto;
+
+    &__bg-gray {
+        background: $bg_gray
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a {
+        color: $orange;
+    }
+
+    li {
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+img {
+    transition: .2s all;
+}
+
+.breadcrumbs {
+
+    a {
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    li {
+        display: inline-block;
+        position: relative;
+        padding-right: 13px;
+
+        &:hover {
+            a {
+                text-decoration: none;
+                color: $orange;
+            }
+        }
+
+        &::after {
+            content: '/';
+            position: absolute;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000;
+            top: 0;
+            right: 0;
+        }
+
+        &.active {
+            a {
+                color: $orange;
+            }
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.footer {
+    background: $footer_bg;
+    padding-top: 44px;
+
+    a {
+        color: #fff;
+    }
+}
+
+button {
+    cursor: pointer;
+    word-break: break-word;
+    transition: .2s all;
+}
+
+input {
+    outline: none;
+    font-family: $body_font-family
+}
+
+td,
+th {
+    padding: 0;
+    min-width: 100px;
+}
+
+th {
+    text-align: left;
+}
+
+.table {
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+strong {
+    font-weight: 700;
+}

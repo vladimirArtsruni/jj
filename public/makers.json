@@ -1,0 +1,351 @@
+
+
+
+
+    
+
+
+{
+    "makes": [
+        
+            
+            {"label": "Advance", "value": "101001188"}
+        
+            ,
+            {"label": "Altec", "value": "101000929"}
+        
+            ,
+            {"label": "Alumi-Bunk", "value": "101000328"}
+        
+            ,
+            {"label": "AM General", "value": "101000003"}
+        
+            ,
+            {"label": "American", "value": "101000079"}
+        
+            ,
+            {"label": "American LaFrance", "value": "101004278"}
+        
+            ,
+            {"label": "Autocar", "value": "101000765"}
+        
+            ,
+            {"label": "Bandit", "value": "101000630"}
+        
+            ,
+            {"label": "Blue Bird", "value": "101000095"}
+        
+            ,
+            {"label": "BMY", "value": "101004440"}
+        
+            ,
+            {"label": "Butler", "value": "101000506"}
+        
+            ,
+            {"label": "Capacity", "value": "101000563"}
+        
+            ,
+            {"label": "Carry On", "value": "101000921"}
+        
+            ,
+            {"label": "Case", "value": "101000510"}
+        
+            ,
+            {"label": "Case IH", "value": "101000513"}
+        
+            ,
+            {"label": "Caterpillar", "value": "101000508"}
+        
+            ,
+            {"label": "CCC", "value": "101004481"}
+        
+            ,
+            {"label": "Champion", "value": "101000111"}
+        
+            ,
+            {"label": "Chevrolet", "value": "101000011"}
+        
+            ,
+            {"label": "Collins", "value": "101001096"}
+        
+            ,
+            {"label": "Crane Carrier", "value": "101000923"}
+        
+            ,
+            {"label": "Cub Cadet", "value": "101001098"}
+        
+            ,
+            {"label": "Cummins", "value": "101004403"}
+        
+            ,
+            {"label": "Custom", "value": "101000127"}
+        
+            ,
+            {"label": "Daewoo", "value": "101000014"}
+        
+            ,
+            {"label": "Deutz", "value": "101000683"}
+        
+            ,
+            {"label": "Dodge", "value": "101000016"}
+        
+            ,
+            {"label": "DuraStar", "value": "101004550"}
+        
+            ,
+            {"label": "E One", "value": "101004221"}
+        
+            ,
+            {"label": "E-One", "value": "101001181"}
+        
+            ,
+            {"label": "Eldorado", "value": "101000546"}
+        
+            ,
+            {"label": "Elgin", "value": "101000576"}
+        
+            ,
+            {"label": "Euro-Liner", "value": "101000339"}
+        
+            ,
+            {"label": "Farmtrac", "value": "101000682"}
+        
+            ,
+            {"label": "Fassi", "value": "101001152"}
+        
+            ,
+            {"label": "Fiat", "value": "101000344"}
+        
+            ,
+            {"label": "Fontaine", "value": "101000599"}
+        
+            ,
+            {"label": "Ford", "value": "101000019"}
+        
+            ,
+            {"label": "Freightliner", "value": "101000020"}
+        
+            ,
+            {"label": "Fuso", "value": "101000021"}
+        
+            ,
+            {"label": "Galbreath", "value": "101004758"}
+        
+            ,
+            {"label": "Galion", "value": "101001195"}
+        
+            ,
+            {"label": "Gillig", "value": "101000791"}
+        
+            ,
+            {"label": "GMC", "value": "101000023"}
+        
+            ,
+            {"label": "Grandsport", "value": "101000589"}
+        
+            ,
+            {"label": "Grove", "value": "101001261"}
+        
+            ,
+            {"label": "Hackney", "value": "101000755"}
+        
+            ,
+            {"label": "Heil", "value": "101000663"}
+        
+            ,
+            {"label": "Hendricks", "value": "101004421"}
+        
+            ,
+            {"label": "Hesse", "value": "101001051"}
+        
+            ,
+            {"label": "Hino", "value": "101000024"}
+        
+            ,
+            {"label": "Hyster", "value": "101000536"}
+        
+            ,
+            {"label": "International", "value": "101000029"}
+        
+            ,
+            {"label": "Isuzu", "value": "101000030"}
+        
+            ,
+            {"label": "Iveco", "value": "101004450"}
+        
+            ,
+            {"label": "Javelin", "value": "101000168"}
+        
+            ,
+            {"label": "JDH Trussmaster", "value": "101000920"}
+        
+            ,
+            {"label": "John Deere", "value": "101000170"}
+        
+            ,
+            {"label": "Johnston", "value": "101001134"}
+        
+            ,
+            {"label": "Kalmar", "value": "101000622"}
+        
+            ,
+            {"label": "Kenworth", "value": "101000033"}
+        
+            ,
+            {"label": "Kioti", "value": "101001185"}
+        
+            ,
+            {"label": "Kovatch", "value": "101004182"}
+        
+            ,
+            {"label": "Kubota", "value": "101000499"}
+        
+            ,
+            {"label": "KZ", "value": "101000180"}
+        
+            ,
+            {"label": "Lenco", "value": "101000432"}
+        
+            ,
+            {"label": "Lorain", "value": "101001262"}
+        
+            ,
+            {"label": "Mack", "value": "101000362"}
+        
+            ,
+            {"label": "Mahindra", "value": "101000667"}
+        
+            ,
+            {"label": "Maxim", "value": "101004236"}
+        
+            ,
+            {"label": "Maxum", "value": "101000195"}
+        
+            ,
+            {"label": "Mercedes-Benz", "value": "101000043"}
+        
+            ,
+            {"label": "Michigan", "value": "101000980"}
+        
+            ,
+            {"label": "Mickey", "value": "101001050"}
+        
+            ,
+            {"label": "Military", "value": "101004237"}
+        
+            ,
+            {"label": "Mitsubishi", "value": "101000046"}
+        
+            ,
+            {"label": "Morbark", "value": "101000628"}
+        
+            ,
+            {"label": "Morgan Olson", "value": "101000685"}
+        
+            ,
+            {"label": "Navistar", "value": "101000048"}
+        
+            ,
+            {"label": "New Flyer", "value": "101001199"}
+        
+            ,
+            {"label": "New Holland", "value": "101000511"}
+        
+            ,
+            {"label": "Nissan", "value": "101000049"}
+        
+            ,
+            {"label": "Odyssey", "value": "101000537"}
+        
+            ,
+            {"label": "Oshkosh", "value": "101001074"}
+        
+            ,
+            {"label": "Other", "value": "101000424"}
+        
+            ,
+            {"label": "Ottawa", "value": "101000490"}
+        
+            ,
+            {"label": "Paccar", "value": "101000897"}
+        
+            ,
+            {"label": "Peterbilt", "value": "101000389"}
+        
+            ,
+            {"label": "Pettibone", "value": "101000954"}
+        
+            ,
+            {"label": "Pitman", "value": "101000971"}
+        
+            ,
+            {"label": "Power King", "value": "101000440"}
+        
+            ,
+            {"label": "Premier", "value": "101000757"}
+        
+            ,
+            {"label": "Scania", "value": "101000588"}
+        
+            ,
+            {"label": "Seagrave", "value": "101000703"}
+        
+            ,
+            {"label": "Simca Unic Mamon Bocquet", "value": "101004520"}
+        
+            ,
+            {"label": "Skyjack", "value": "101001088"}
+        
+            ,
+            {"label": "Sterling", "value": "101000062"}
+        
+            ,
+            {"label": "Superhaul", "value": "101000666"}
+        
+            ,
+            {"label": "Sutphen", "value": "101001196"}
+        
+            ,
+            {"label": "Thibault", "value": "101001308"}
+        
+            ,
+            {"label": "Thomas", "value": "101001099"}
+        
+            ,
+            {"label": "Thompson", "value": "101000292"}
+        
+            ,
+            {"label": "Toyota", "value": "101000065"}
+        
+            ,
+            {"label": "Trailstar", "value": "101000883"}
+        
+            ,
+            {"label": "Trident", "value": "101001141"}
+        
+            ,
+            {"label": "Twister", "value": "101000629"}
+        
+            ,
+            {"label": "UD", "value": "101000660"}
+        
+            ,
+            {"label": "Volvo", "value": "101000067"}
+        
+            ,
+            {"label": "Western", "value": "101000315"}
+        
+            ,
+            {"label": "Western Star", "value": "101000502"}
+        
+            ,
+            {"label": "Wirtgen", "value": "101001212"}
+        
+            ,
+            {"label": "Workhorse", "value": "101000495"}
+        
+            ,
+            {"label": "Yanmar", "value": "101000690"}
+                
+    ]
+}
